@@ -11,6 +11,7 @@
       --muted: #4d4d4d;
       --card: #ffffff;
       --accent: #2c7a7b;
+      --accent-dark: #215c5d;
     }
 
     * { box-sizing: border-box; }
@@ -77,6 +78,33 @@
       font-weight: 600;
     }
 
+    .actions {
+      margin-top: 20px;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 10px 16px;
+      border-radius: 10px;
+      background: var(--accent);
+      color: #ffffff;
+      text-decoration: none;
+      font-weight: 600;
+      letter-spacing: 0.2px;
+      transition: transform 120ms ease, background 120ms ease, box-shadow 120ms ease;
+      box-shadow: 0 6px 16px rgba(44, 122, 123, 0.2);
+    }
+
+    .btn:hover {
+      background: var(--accent-dark);
+      transform: translateY(-1px);
+    }
+
+    .btn:focus-visible {
+      outline: 2px solid #0f3b3b;
+      outline-offset: 2px;
+    }
+
     @media (max-width: 480px) {
       h1 { font-size: 1.6rem; }
       .label { min-width: 90px; }
@@ -101,6 +129,10 @@
         <span>11L</span>
       </div>
     </section>
+
+    <div class="actions">
+      <a class="btn" href="index.html">Voltar ao index</a>
+    </div>
   </main>
 </body>
 </html>
