@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leonardo Marques</title>
+  <style>
+    :root {
+      --bg: #757062;
+      --ink: #1f1f1f;
+      --muted: #4d4d4d;
+      --card: #f5d7d7;
+      --accent: #010303;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: "Georgia", "Times New Roman", serif;
+      color: var(--ink);
+      background: linear-gradient(120deg, #f6f4ef 0%, #eef2f3 100%);
+      min-height: 100vh;
+      display: grid;
+      place-items: center;
+      padding: 32px 16px;
+    }
+
+    .card {
+      width: min(720px, 92vw);
+      background: var(--card);
+      border-radius: 16px;
+      padding: 28px 32px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+      border: 1px solid rgba(0, 0, 0, 0.06);
+    }
+
+    h1 {
+      margin: 0 0 6px 0;
+      font-size: 2rem;
+      letter-spacing: 0.5px;
+    }
+
+    .subtitle {
+      margin: 0 0 16px 0;
+      color: var(--muted);
+      font-size: 1rem;
+    }
+
+    .pill {
+      display: inline-block;
+      padding: 6px 12px;
+      border-radius: 999px;
+      background: #e7f3f3;
+      color: var(--accent);
+      font-weight: 600;
+      font-size: 0.85rem;
+      margin-right: 8px;
+      margin-bottom: 8px;
+    }
+
+    .info {
+      display: grid;
+      gap: 8px;
+      margin-top: 12px;
+    }
+
+    .info div {
+      display: flex;
+      gap: 10px;
+      align-items: baseline;
+    }
+
+    .label {
+      min-width: 120px;
+      color: var(--muted);
+      font-weight: 600;
+    }
+
+    @media (max-width: 480px) {
+      h1 { font-size: 1.6rem; }
+      .label { min-width: 90px; }
+    }
+  </style>
+</head>
+<body>
+  <main class="card">
+    <h1>Leonardo Marques</h1>
+    <p class="subtitle">Apresentacao pessoal</p>
+
+    <span class="pill">11L</span>
+    <span class="pill">Idade: 16</span>
+
+    <section class="info">
+      <div>
+        <span class="label">Escola</span>
+        <span>Augusto Gomes</span>
+      </div>
+      <div>
+        <span class="label">Turma</span>
+        <span>11L</span>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
